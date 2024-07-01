@@ -7,6 +7,9 @@ const TimeLine = () => {
     const box1 = useRef(null);
     const box2 = useRef(null);
     const box3 = useRef(null);
+    const box4 = useRef(null);
+    const box5 = useRef(null);
+    const box6 = useRef(null);
 
     gsap.registerPlugin(useGSAP);
 
@@ -39,6 +42,30 @@ const TimeLine = () => {
             backgroundColor:"CornflowerBlue"
         })
 
+        tl.from(box4.current, {
+            duration: 2,
+            x: 800,
+            ease: "power2.out",
+            delay: 0.5,
+            backgroundColor: "CornflowerBlue"
+        })
+
+        tl.from(box5.current, {
+            duration: 2,
+            x: 800,
+            ease: "power2.out",
+            delay: 0.5,
+            backgroundColor: "CornflowerBlue"
+        })
+
+        tl.from(box6.current, {
+            duration: 2,
+            x: 800,
+            ease: "power2.out",
+            delay: 0.5,
+            backgroundColor: "CornflowerBlue"
+        })
+
     })
 
   return (
@@ -46,9 +73,13 @@ const TimeLine = () => {
 
           <h1 className='text-center my-10 text-3xl uppercase'> time line in gsap</h1>
 
-          <div className="box1 h-[100px] w-[100px] bg-pink-500 my-5" ref={box1}></div>
-          <div className="box2 h-[100px] w-[100px] bg-pink-600 my-5" ref={box2} ></div>
-          <div className="box3 h-[100px] w-[100px] bg-pink-700 my-5" ref={box3} ></div>
+          <div className="box1 h-[100px] w-[100px] bg-pink-100 my-5" ref={box1}></div>
+          <div className="box2 h-[100px] w-[100px] bg-pink-200 my-5" ref={box2} ></div>
+          <div className="box3 h-[100px] w-[100px] bg-pink-300 my-5" ref={box3} ></div>
+
+          <div className="box1 h-[100px] w-[100px] bg-pink-400 my-5" ref={box4}></div>
+          <div className="box2 h-[100px] w-[100px] bg-pink-500 my-5" ref={box5} ></div>
+          <div className="box3 h-[100px] w-[100px] bg-pink-600 my-5" ref={box6} ></div>
     
     </>
   )

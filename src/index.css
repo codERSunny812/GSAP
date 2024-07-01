@@ -4,8 +4,9 @@
 
 
 html,body{
-    background-color: black;
+    background-color: black; 
     color: white;
+    overflow-x: hidden;
 }
 
 
@@ -18,11 +19,12 @@ html,body{
     height: 300px;
     text-transform: uppercase;
     overflow-y: scroll;
-    background:gray;
-    
-
-
+    background:rgb(128, 128, 128);
+    border-radius: 12px;
 }
+
+
+
 
 
 
